@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600&display=swap');
-
+/* Make the hover preview hover icon, needs to fill in the background with transparent color when hooverd on*/
 #nft-wrapper {
     max-width: 375px;
-    height: 630px;
+    height: 580px;
     margin: auto;
-    border: 1px solid white;
     display: flex;
     border-radius: 15px;
     background-color: hsl(216, 50%, 16%);
@@ -18,6 +17,7 @@
     margin: 20px auto;
     padding-top: 15px;
     width: 300px;
+    position: relative;
     /* border: 1px solid white; */
 }
 
@@ -26,12 +26,11 @@
     width: 100%;
     height: fit-content;
     border-radius: 15px;
+    height: 265px;
     
 }
 
-#nft-main-img:hover {
-    opacity: 0.8;
-}
+
 
 
 #main-info-wrapper{
@@ -47,7 +46,7 @@
     align-items: center;
     width: 250px;
     /* margin-left: 36px; */
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .name-id-wrapper h1 {
@@ -119,6 +118,28 @@
     color: hsl(178, 100%, 50%); ;
 }
 
+
+.view-icon-wrapper { 
+    position: absolute;
+    background-color: cyan;
+    height: 100%;
+    border-radius: 15px;
+    width: 300px;
+    opacity: 0;
+}
+
+#view-icon {
+    position: relative;
+    left: 128px;
+    top: 105px;
+    opacity: 1;
+}
+
+
+.view-icon-wrapper:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
 
 
 
