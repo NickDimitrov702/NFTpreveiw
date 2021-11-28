@@ -61,6 +61,10 @@
 
 }
 
+.name-id-wrapper p:hover {
+    cursor: pointer;
+}
+
 .desription-wrapper {
     display: flex;
     width: 300px;
@@ -139,8 +143,6 @@
     cursor: pointer;
 }
 
-
-
 @media all and (max-width: 440px) {
 
     html {
@@ -172,6 +174,21 @@
         margin: auto;
     }
 
+    .name-id-wrapper h1 {
+        font-size: 25px;
+        color: hsl(180, 23%, 95%);
+        
+    }
+
+    
+        .name-id-wrapper p {
+        font-size: 21px;
+        font-weight: bold;
+        color: hsl(180, 25%, 94%);
+        font-weight: 600;
+
+    }
+
     #main-info-wrapper{
         display: flex;
         flex-direction: column;
@@ -195,6 +212,10 @@
         display: flex;
         align-items: center;
         margin: auto;
+    }
+
+    .avatar-wrapper p a {
+        color: hsl(175, 27%, 92%); ;
     }
 }
 
